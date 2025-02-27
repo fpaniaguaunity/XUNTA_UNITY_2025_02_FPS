@@ -121,6 +121,7 @@ GameObject:
   - component: {fileID: 706955376722901727}
   - component: {fileID: 2093185162250395097}
   - component: {fileID: 7554336028858524496}
+  - component: {fileID: 3732805255104675180}
   m_Layer: 0
   m_Name: EnemigoInsistente
   m_TagString: Untagged
@@ -156,7 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a2e1c1a5b65b9489ee405ae3b780e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 3
   targetTag: Player
 --- !u!54 &7554336028858524496
 Rigidbody:
@@ -185,3 +186,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &3732805255104675180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4064499062485494619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf4b32a480ee02c4ebf5e6182a1cd869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionDistance: 3
+  prefabExplosion: {fileID: 7226888052703040409, guid: 7ec363c8df426644ea85f8d6d570561c,
+    type: 3}
+  targetTag: Player
+  danyo: 10

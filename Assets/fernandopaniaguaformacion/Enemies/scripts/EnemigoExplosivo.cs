@@ -11,6 +11,9 @@ public class EnemigoExplosivo : MonoBehaviour
     [Header("Tag del GameObject al que va a seguir")]
     public string targetTag = "Player";
 
+    [Header("Daño que realiza al player al explotar")]
+    public int danyo = 1;
+
     //Al ser private no aparece en el inspector
     private Transform transformPlayer;
     private float distanciaAPlayer;
@@ -26,8 +29,14 @@ public class EnemigoExplosivo : MonoBehaviour
         distanciaAPlayer = (transformPlayer.position - transform.position).magnitude;
         if (distanciaAPlayer <= explosionDistance)
         {
-            Destroy(gameObject);
-            Instantiate(prefabExplosion, transform.position, transform.rotation);
+            Explotar();
         }
+    }
+
+    void Explotar()
+    {
+        Destroy(gameObject);
+        Instantiate(prefabExplosion, transform.position, transform.rotation);
+        GameObject.Find("GameManager").GetComponent<GameManager>().decrementarSalud(this.danyo);
     }
 }
