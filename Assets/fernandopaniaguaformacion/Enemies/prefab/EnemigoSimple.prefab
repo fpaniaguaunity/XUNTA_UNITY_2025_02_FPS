@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6283325665593208915}
   m_Layer: 0
   m_Name: Model
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121,9 +121,10 @@ GameObject:
   - component: {fileID: 4661042495429950098}
   - component: {fileID: 8519172435617389054}
   - component: {fileID: 3429656986567374608}
+  - component: {fileID: 6272529791430148466}
   m_Layer: 0
   m_Name: EnemigoSimple
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -186,3 +187,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &6272529791430148466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4953859277206767166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a83c337fdd66ca4ca502d50776278bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  energia: 10
+  prefabDestruccion: {fileID: 2433282508537954060, guid: 3ef3ae421f71c5c4e97fe12dc2fc6312,
+    type: 3}

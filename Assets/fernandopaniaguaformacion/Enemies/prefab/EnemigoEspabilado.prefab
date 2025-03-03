@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7429686639487700580}
   m_Layer: 0
   m_Name: Model
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121,9 +121,10 @@ GameObject:
   - component: {fileID: 7647478546512280850}
   - component: {fileID: 7744393981968629055}
   - component: {fileID: 7440342921598380512}
+  - component: {fileID: -2011840971551691633}
   m_Layer: 0
   m_Name: EnemigoEspabilado
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -189,3 +190,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &-2011840971551691633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7209102126850900298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a83c337fdd66ca4ca502d50776278bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  energia: 10
+  prefabDestruccion: {fileID: 2433282508537954060, guid: 3ef3ae421f71c5c4e97fe12dc2fc6312,
+    type: 3}

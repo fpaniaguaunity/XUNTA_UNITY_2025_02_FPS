@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4889194166856670276}
   m_Layer: 0
   m_Name: Model
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122,9 +122,10 @@ GameObject:
   - component: {fileID: 2093185162250395097}
   - component: {fileID: 7554336028858524496}
   - component: {fileID: 3732805255104675180}
+  - component: {fileID: 8124827709857431373}
   m_Layer: 0
   m_Name: EnemigoInsistente
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -203,3 +204,18 @@ MonoBehaviour:
     type: 3}
   targetTag: Player
   danyo: 10
+--- !u!114 &8124827709857431373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4064499062485494619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a83c337fdd66ca4ca502d50776278bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  energia: 10
+  prefabDestruccion: {fileID: 2433282508537954060, guid: 3ef3ae421f71c5c4e97fe12dc2fc6312,
+    type: 3}
