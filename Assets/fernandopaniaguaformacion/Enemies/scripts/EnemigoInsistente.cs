@@ -15,6 +15,6 @@ public class EnemigoInsistente : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
-        transform.LookAt(transformPlayer);
+        transform.LookAt(new Vector3(transformPlayer.position.x, transform.position.y, transformPlayer.position.z));
     }
 }
